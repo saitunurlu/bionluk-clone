@@ -1,7 +1,7 @@
 <template>
-  <aside class="w-full h-auto sticky left-0 top-0" aria-label="Sidebar">
-    <div class="overflow-y-auto py-4 px-3  bg-body dark:bg-gray-800">
-      <ul class="space-y-2">
+  <aside class="w-full h-screen  sticky left-0 top-0 shadow-lg bg-body " aria-label="Sidebar">
+    <div class="py-4 px-3 ">
+      <ul class="">
         <li>
           <label class="text-center font-bold text-1xl ml-2 ">Hizmet Alan</label>
           <nuxt-link

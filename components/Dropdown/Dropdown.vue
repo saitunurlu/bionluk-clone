@@ -1,6 +1,6 @@
 <template>
 <!-- Dropdown menu -->
-<div id="dropdownNotification" v-if="isShow" class="w-64 h-96 z-20 bg-white rounded divide-y divide-gray-100 shadow absolute top-7 overflow-y-auto">
+<div id="dropdownNotification" v-if="isShow" class="w-64 h-96 z-20 bg-white rounded divide-y divide-gray-100 shadow absolute top-7 right-4 overflow-y-auto">
   <div class="block py-2 z-20 px-4 sticky top-0 left-0 font-medium text-center text-gray-700 bg-gray-50 dark:bg-gray-800 dark:text-white">
       {{title}}
   </div>

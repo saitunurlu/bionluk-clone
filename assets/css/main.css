@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -46,7 +44,7 @@
 }
 
 * {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
