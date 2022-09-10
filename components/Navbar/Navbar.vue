@@ -6,6 +6,11 @@
     <MobileNavbar v-else />
   </div>
 </template>
+
+
+
+
+
 <script>
 import DefaultNavbar from './DefaultNavbar.vue'
 import MobileNavbar from './MobileNavbar.vue'
