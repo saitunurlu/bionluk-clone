@@ -13,8 +13,8 @@
           />
         </form>
       </div>
-      <div v-if="$auth.loggedIn" >
-      
+      <div >
+
       <div  class="col-start-9 col-end-13 flex items-center">
         <button
           class="bg-none outline-none text-gray-600 hover:text-gray-800 transition-all"
@@ -95,7 +95,7 @@ export default {
     Menu,
     Dropdown,
   },
-  
+
 async mounted() {
 
  const result = await  axios.get('https://guresirlercekici.com/api/get_all_data')
@@ -107,10 +107,10 @@ async mounted() {
     return {
       categories: [
         {
-          
+
           subCategories: [],
         },
-        
+
       ],
 
       isNotificationDropdownShow: false,

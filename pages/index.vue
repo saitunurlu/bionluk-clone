@@ -31,6 +31,6 @@
 
 <script>
 export default {
-  name: 'IndexPage',
+  layout:'navbarwithout',
 }
 </script>
