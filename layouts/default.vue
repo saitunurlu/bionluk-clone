@@ -8,6 +8,11 @@
 
 <script>
 import ControlPanel from '~/components/ControlPanel/ControlPanel.vue'
+
+
+
+
+
 export default {
     // data() {
     //     return {
