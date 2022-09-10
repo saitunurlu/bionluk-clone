@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+
+    .btn {
+        @apply rounded-md transition-all p-4 inline-flex justify-center items-center
+    }
+
+    .btn-sm {
+        @apply btn w-24 h-8
+    }
+    .btn-md {
+        @apply btn w-36 h-12
+    }
+    .btn-lg {
+        @apply btn w-48 h-16
+    }
+
+    .btn-primary {
+        @apply bg-primary opacity-80 text-white hover:opacity-100 transition-all
+    }
+
+    .btn-indigo {
+        @apply bg-indigo-500 opacity-80 text-white hover:opacity-100 transition-all hover:scale-105
+    }
+
+    .btn-gray {
+        @apply bg-gray-200 hover:bg-gray-300 transition-all
+    }
+    .input {
+        @apply border-2 outline-none border-gray-300  text-gray-900 text-sm rounded-md  block w-full p-2.5 transition-all focus:border-gray-400 bg-body
+    }
+
+
+    .avatar {
+        @apply w-8 h-8 rounded-full
+    }
+
+}
+
+* {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+
+html,body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #f5f4ee;
+}
+
+
+.menuName:hover > .menu {
+    display: block;
+}
+
+.menu:hover {
+    display:block;
+}
