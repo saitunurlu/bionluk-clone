@@ -1,9 +1,8 @@
 <template>
   <div class="w-full shadow-lg transition-all"
-    :class="{'h-28':windowWidth >= 1024,'h-14':windowWidth < 1024}"
   >
-    <DefaultNavbar v-if="windowWidth >= 1024" />
-    <MobileNavbar v-else />
+    <DefaultNavbar class="desktop" />
+    <MobileNavbar class="mobile" />
   </div>
 </template>
 
@@ -19,15 +18,27 @@ export default {
     DefaultNavbar,
     MobileNavbar,
   },
-  data(){
-    return {
-        windowWidth: process.client ? window.innerWidth : 1024
-    }
-  },
-  beforeMount() { // TODO: Navbar oluyor ControlPanel olmuyor bakılacak
-    window.onresize = () => {
-      this.windowWidth = window.innerWidth
-    }
-  },
 }
 </script>
+
+<style scoped>
+
+@media screen and (max-width:1023px) {
+  .mobile {
+    display:block;
+  }
+  .desktop {
+    display:none;
+  }
+}
+@media screen and (min-width:1024px) {
+    .mobile {
+      display: none;
+    }
+    .desktop {
+      display: block;
+    }
+}
+
+
+</style>

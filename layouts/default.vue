@@ -1,29 +1,31 @@
 <template>
-  <div>
-    <Navbar />
+  <div class="w-screen h-screen">
+    <div class="">
+      <Navbar />
+    </div>
     <nuxt />
-    <ControlPanel />
+    <ControlPanel class="controlPanel" />
   </div>
 </template>
 
 <script>
 import ControlPanel from '~/components/ControlPanel/ControlPanel.vue'
-
-
-
-
-
 export default {
-    // data() {
-    //     return {
-    //         windowWidth2: process.client ? window.innerWidth : 1023,
-    //     };
-    // },
-    // beforeMount() {
-    //     window.onresize = () => {
-    //         this.windowWidth2 = window.innerWidth;
-    //     };
-    // },
     components: { ControlPanel }
 }
 </script>
+
+<style scoped>
+
+@media screen and (max-width: 888px) {
+    .controlPanel {
+      display:block;
+    }
+}
+@media screen and (min-width:889px) {
+    .controlPanel {
+      display: none;
+    }
+}
+
+</style>

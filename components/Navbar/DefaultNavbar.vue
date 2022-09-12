@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full flex flex-col">
+  <div class="w-full h-28 flex flex-col">
     <div class="grid grid-cols-12 border-b h-4/6 items-center">
       <div class="col-start-1 col-end-3 flex justify-center">
         <Logo />
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div
-      class="justify-center items-center min-h-[2/6] w-full flex-wrap py-4 hidden 2xl:flex xl:flex lg:flex"
+      class="justify-center items-center min-h-[2/6] w-full flex-wrap py-1 hidden 2xl:flex xl:flex lg:flex"
     >
       <div
         class="menuName text-gray-600 hover:text-gray-800 h-full cursor-pointer transition-all border-b-2 hover:border-gray-400 border-transparent relative"
@@ -94,7 +94,6 @@ import Logo from '../Logo/Logo.vue'
 import Badge from '../Badge/Badge.vue'
 import Menu from '../Menu/Menu.vue'
 import Dropdown from '../Dropdown/Dropdown.vue'
-import axios from 'axios'
 export default {
   components: {
     Logo,
@@ -103,21 +102,8 @@ export default {
     Dropdown,
   },
 
-  async mounted() {
-    const result = await axios
-      .get('https://guresirlercekici.com/api/get_all_data')
-      .then((response) => {
-        this.categories = response.data
-      })
-  },
   data() {
     return {
-      categories: [
-        {
-          subCategories: [],
-        },
-      ],
-
       isNotificationDropdownShow: false,
       isMessageDropdownShow: false,
       isAccountDropdownShow: false,
@@ -135,5 +121,10 @@ export default {
       this.isAccountDropdownShow = !this.isAccountDropdownShow
     },
   },
+  computed: {
+    categories: function(){
+      return this.$store.getters.getCategories;
+    }
+  }
 }
 </script>

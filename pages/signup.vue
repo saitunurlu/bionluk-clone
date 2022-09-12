@@ -94,6 +94,7 @@ import FacebookButton from '@/components/Buttons/FacebookButton.vue'
 import GoogleButton from '@/components/Buttons/GoogleButton.vue'
 
 export default {
+  layout:'navbarwithout',
   components: {
     OnlyLogo,
     FacebookButton,

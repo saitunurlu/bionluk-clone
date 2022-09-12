@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-full h-screen  sticky left-0 top-0 shadow-lg bg-body " aria-label="Sidebar">
+  <aside class="w-full min-h-screen h-screen sticky left-0 top-0 shadow-lg bg-body " aria-label="Sidebar">
     <div class="py-4 px-3 ">
       <ul class="">
         <li>

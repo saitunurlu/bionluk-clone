@@ -35,6 +35,7 @@
 import OnlyLogo from '@/components/Navbar/OnlyLogo'
 
 export default {
+  layout:'navbarwithout',
   components: {
     OnlyLogo,
   },
